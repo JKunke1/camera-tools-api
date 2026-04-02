@@ -4,7 +4,6 @@ from typing import Optional, Dict, Tuple
 import json
 from math import atan, degrees
 from pathlib import Path
-from datetime import datetime, timezone
 
 app = FastAPI(title="Camera Tools API", version="1.0.0")
 
@@ -21,17 +20,6 @@ FORMAT_DEFAULTS: Dict[str, Tuple[int, int]] = {
 }
 
 FULL_FRAME_DIAGONAL_MM = 43.266615305567875  # 36x24mm
-TOOL_PROOF = "camera_tools_api_live"
-API_VERSION = "v1"
-
-
-def proof_meta(endpoint_used: str) -> dict:
-    return {
-        "tool_proof": TOOL_PROOF,
-        "endpoint_used": endpoint_used,
-        "api_version": API_VERSION,
-        "server_time_utc": datetime.now(timezone.utc).isoformat(),
-    }
 
 
 def resolve_resolution(width: Optional[int], height: Optional[int], format_label: Optional[str]) -> Tuple[int, int, list]:
@@ -125,7 +113,6 @@ class LensEquivalencyRequest(BaseModel):
 @app.get("/health")
 def health():
     return {
-        **proof_meta("healthCheck"),
         "status": "ok",
     }
 
@@ -142,7 +129,6 @@ def estimate_record_time(req: RecordTimeRequest):
     total_minutes = total_seconds / 60
     assumptions.append("Theoretical estimate based on simplified uncompressed storage assumption.")
     return {
-        **proof_meta("estimateRecordTime"),
         "estimated_record_time_minutes": round(total_minutes, 2),
         "estimated_record_time_seconds": round(total_seconds, 2),
         "resolution": {"width": width, "height": height},
@@ -169,7 +155,6 @@ def estimate_file_size(req: FileSizeRequest):
     total_gb = total_frames * bytes_per_frame / 1024**3
     assumptions.append(f"Codec assumption used: {req.codec}")
     return {
-        **proof_meta("estimateFileSize"),
         "estimated_size_gb": round(total_gb, 2),
         "total_frames": round(total_frames, 2),
         "bytes_per_frame": round(bytes_per_frame, 2),
@@ -192,7 +177,6 @@ def estimate_render_time(req: RenderTimeRequest):
     assumptions.append(f"Codec assumption used: {req.codec}")
     assumptions.append(f"System speed factor used: {req.system_speed_factor}")
     return {
-        **proof_meta("estimateRenderTime"),
         "estimated_render_time_minutes": round(estimated_render_time_minutes, 2),
         "estimated_size_gb": round(estimated_size_gb, 2),
         "total_frames": round(total_frames, 2),
@@ -206,7 +190,6 @@ def camera_preset_lookup(req: CameraPresetRequest):
     for name, preset in CAMERA_PRESETS.items():
         if name.lower() == req.camera_name.lower():
             return {
-                **proof_meta("cameraPresetLookup"),
                 "camera_name": name,
                 **preset,
             }
@@ -228,7 +211,6 @@ def crop_factor(req: CropFactorRequest):
         sw, sh = req.sensor_width_mm, req.sensor_height_mm
     crop = sensor_diagonal(req.reference_width_mm, req.reference_height_mm) / sensor_diagonal(sw, sh)
     return {
-        **proof_meta("cropFactor"),
         "crop_factor": round(crop, 4),
         "sensor_width_mm": sw,
         "sensor_height_mm": sh,
@@ -254,7 +236,6 @@ def field_of_view(req: FieldOfViewRequest):
     v_fov = degrees(2 * atan(sh / (2 * req.focal_length_mm)))
     d_fov = degrees(2 * atan(sensor_diagonal(sw, sh) / (2 * req.focal_length_mm)))
     return {
-        **proof_meta("fieldOfView"),
         "horizontal_fov_degrees": round(h_fov, 2),
         "vertical_fov_degrees": round(v_fov, 2),
         "diagonal_fov_degrees": round(d_fov, 2),
@@ -291,7 +272,6 @@ def depth_of_field(req: DOFRequest):
         far_m = None
         total = None
     return {
-        **proof_meta("depthOfField"),
         "circle_of_confusion_mm": round(coc, 4),
         "hyperfocal_distance_m": round(H / 1000.0, 3),
         "near_focus_distance_m": round(near_mm / 1000.0, 3),
@@ -330,7 +310,6 @@ def lens_equivalency(req: LensEquivalencyRequest):
     ratio = sensor_diagonal(tsw, tsh) / sensor_diagonal(ssw, ssh)
     target_focal = req.focal_length_mm * ratio
     return {
-        **proof_meta("lensEquivalency"),
         "source_focal_length_mm": req.focal_length_mm,
         "equivalent_target_focal_length_mm": round(target_focal, 2),
         "source_sensor": {"width_mm": ssw, "height_mm": ssh},
