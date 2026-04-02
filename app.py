@@ -109,7 +109,12 @@ class LensEquivalencyRequest(BaseModel):
     target_sensor_height_mm: Optional[float] = None
     focal_length_mm: float = Field(gt=0)
 
-
+@app.get("/")
+def root():
+    return {
+        "name": "Camera Tools API",
+        "status": "live"
+    }
 @app.get("/health")
 def health():
     return {
