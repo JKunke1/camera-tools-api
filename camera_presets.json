@@ -1,0 +1,166 @@
+{
+  "Sony Venice": {
+    "sensor_width_mm": 36.2,
+    "sensor_height_mm": 24.1
+  },
+  "Sony Venice 2 8.6K": {
+    "sensor_width_mm": 40.2,
+    "sensor_height_mm": 21.1
+  },
+  "Sony BURANO": {
+    "sensor_width_mm": 35.9,
+    "sensor_height_mm": 24.0
+  },
+  "Sony FX9": {
+    "sensor_width_mm": 35.7,
+    "sensor_height_mm": 18.8
+  },
+  "Sony FX6": {
+    "sensor_width_mm": 35.6,
+    "sensor_height_mm": 23.8
+  },
+  "Sony FX3": {
+    "sensor_width_mm": 35.6,
+    "sensor_height_mm": 23.8
+  },
+  "Alexa 35": {
+    "sensor_width_mm": 27.99,
+    "sensor_height_mm": 19.22
+  },
+  "Alexa Mini": {
+    "sensor_width_mm": 28.25,
+    "sensor_height_mm": 18.17
+  },
+  "Alexa LF": {
+    "sensor_width_mm": 36.7,
+    "sensor_height_mm": 25.54
+  },
+  "Alexa Mini LF": {
+    "sensor_width_mm": 36.7,
+    "sensor_height_mm": 25.54
+  },
+  "Alexa 65": {
+    "sensor_width_mm": 54.12,
+    "sensor_height_mm": 25.59
+  },
+  "RED Monstro 8K VV": {
+    "sensor_width_mm": 40.96,
+    "sensor_height_mm": 21.6
+  },
+  "RED V-Raptor 8K VV": {
+    "sensor_width_mm": 40.96,
+    "sensor_height_mm": 21.6
+  },
+  "RED V-Raptor [X] 8K VV": {
+    "sensor_width_mm": 40.96,
+    "sensor_height_mm": 21.6
+  },
+  "RED V-Raptor XL [X] 8K VV": {
+    "sensor_width_mm": 40.96,
+    "sensor_height_mm": 21.6
+  },
+  "RED Komodo 6K S35": {
+    "sensor_width_mm": 27.03,
+    "sensor_height_mm": 14.26
+  },
+  "RED Komodo-X 6K S35": {
+    "sensor_width_mm": 27.03,
+    "sensor_height_mm": 14.26
+  },
+  "Panavision DXL2": {
+    "sensor_width_mm": 40.96,
+    "sensor_height_mm": 21.6
+  },
+  "Blackmagic URSA 12K": {
+    "sensor_width_mm": 27.03,
+    "sensor_height_mm": 14.26
+  },
+  "Blackmagic 6K FF": {
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0
+  },
+  "Blackmagic 4K": {
+    "sensor_width_mm": 18.96,
+    "sensor_height_mm": 10.0
+  },
+  "Blackmagic URSA Cine 12K LF": {
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0
+  },
+  "Blackmagic URSA Cine 17K 65": {
+    "sensor_width_mm": 50.81,
+    "sensor_height_mm": 23.32
+  },
+  "Canon C300 Mk III": {
+    "sensor_width_mm": 26.2,
+    "sensor_height_mm": 13.8
+  },
+  "Canon C500 Mk II": {
+    "sensor_width_mm": 38.1,
+    "sensor_height_mm": 20.1
+  },
+  "Canon C70": {
+    "sensor_width_mm": 26.2,
+    "sensor_height_mm": 13.8
+  },
+  "Canon C400": {
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 19.0
+  },
+  "Canon C80": {
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 19.0
+  },
+  "Big Sky": {
+    "sensor_width_mm": 77.5,
+    "sensor_height_mm": 75.6
+  },
+  "IMAX 15/70": {
+    "sensor_width_mm": 70.41,
+    "sensor_height_mm": 48.5
+  },
+  "IMAX Digital": {
+    "sensor_width_mm": 54.12,
+    "sensor_height_mm": 25.59
+  },
+  "IMAX 65mm": {
+    "sensor_width_mm": 52.63,
+    "sensor_height_mm": 23.01
+  },
+  "Super 8": {
+    "sensor_width_mm": 5.79,
+    "sensor_height_mm": 4.01
+  },
+  "16mm": {
+    "sensor_width_mm": 10.26,
+    "sensor_height_mm": 7.49
+  },
+  "Super 16": {
+    "sensor_width_mm": 12.52,
+    "sensor_height_mm": 7.41
+  },
+  "35mm Academy": {
+    "sensor_width_mm": 21.95,
+    "sensor_height_mm": 16.0
+  },
+  "Super 35": {
+    "sensor_width_mm": 24.89,
+    "sensor_height_mm": 18.66
+  },
+  "VistaVision": {
+    "sensor_width_mm": 37.72,
+    "sensor_height_mm": 24.92
+  },
+  "65mm": {
+    "sensor_width_mm": 52.63,
+    "sensor_height_mm": 23.01
+  },
+  "70mm": {
+    "sensor_width_mm": 70.41,
+    "sensor_height_mm": 48.5
+  },
+  "Full Frame": {
+    "sensor_width_mm": 36.0,
+    "sensor_height_mm": 24.0
+  }
+}
