@@ -11,6 +11,62 @@ PRESETS_PATH = Path(__file__).with_name("camera_presets.json")
 with open(PRESETS_PATH, "r") as f:
     CAMERA_PRESETS = json.load(f)
 
+CAMERA_ALIASES = {
+    "sony venice": "Sony Venice",
+    "venice": "Sony Venice",
+
+    "sony venice 2": "Sony Venice 2 8.6K",
+    "venice 2": "Sony Venice 2 8.6K",
+    "venice2": "Sony Venice 2 8.6K",
+    "sony venice 2 8.6k": "Sony Venice 2 8.6K",
+
+    "sony burano": "Sony BURANO",
+    "burano": "Sony BURANO",
+}
+
+MODE_ALIASES_BY_CAMERA = {
+    "Sony Venice 2 8.6K": {
+        "ff 8.6k 3:2": "8.6K 3:2",
+        "full frame 8.6k 3:2": "8.6K 3:2",
+        "full-frame 8.6k 3:2": "8.6K 3:2",
+
+        "ff 8.6k 17:9": "8.6K 17:9",
+        "full frame 8.6k 17:9": "8.6K 17:9",
+        "full-frame 8.6k 17:9": "8.6K 17:9",
+
+        "8.6k 3:2": "8.6K 3:2",
+        "8.6k 17:9": "8.6K 17:9",
+        "8.2k 17:9": "8.2K 17:9",
+        "8.1k 16:9": "8.1K 16:9",
+        "7.6k 16:9": "7.6K 16:9",
+        "8.2k 2.39:1": "8.2K 2.39:1",
+        "5.8k 17:9 s35": "5.8K 17:9 S35",
+        "5.8k 6:5 s35": "5.8K 6:5 S35",
+        "5.8k 4:3 s35": "5.8K 4:3 S35",
+        "5.5k 2.39:1 s35": "5.5K 2.39:1 S35",
+        "5.4k 16:9 s35": "5.4K 16:9 S35",
+    },
+    "Sony BURANO": {
+        "ff 8.6k 16:9": "FF 8.6K 16:9",
+        "full frame 8.6k 16:9": "FF 8.6K 16:9",
+        "full-frame 8.6k 16:9": "FF 8.6K 16:9",
+        "8.6k 16:9": "FF 8.6K 16:9",
+
+        "ff 8.6k 17:9": "FF 8.6K 17:9",
+        "full frame 8.6k 17:9": "FF 8.6K 17:9",
+        "full-frame 8.6k 17:9": "FF 8.6K 17:9",
+        "8.6k 17:9": "FF 8.6K 17:9",
+
+        "ffc 6k 16:9": "FFc 6K 16:9",
+        "ffc 6k 17:9": "FFc 6K 17:9",
+        "s35 5.8k 16:9": "S35 5.8K 16:9",
+        "s35 5.8k 17:9": "S35 5.8K 17:9",
+        "s35 4.3k 4:3": "S35 4.3K 4:3",
+        "s35c 4k 17:9": "S35c 4K 17:9",
+        "s35 1.9k 16:9": "S35 1.9K 16:9",
+    },
+}
+
 FORMAT_DEFAULTS: Dict[str, Tuple[int, int]] = {
     "4K": (4096, 2160),
     "6K": (6144, 3160),
@@ -76,9 +132,26 @@ def format_duration(total_seconds: float) -> str:
     return f"{seconds} sec"
 
 
+def normalize_text(value: str) -> str:
+    return " ".join(value.strip().lower().replace("-", " ").split())
+
+
+def normalize_camera_name(camera_name: str) -> str:
+    key = normalize_text(camera_name)
+    return CAMERA_ALIASES.get(key, camera_name)
+
+
+def normalize_mode_name(camera_name: str, mode_name: str) -> str:
+    key = normalize_text(mode_name)
+    aliases = MODE_ALIASES_BY_CAMERA.get(camera_name, {})
+    return aliases.get(key, mode_name)
+
+
 def find_camera_preset(camera_name: str) -> Tuple[str, dict]:
+    normalized_camera = normalize_camera_name(camera_name)
+
     for name, preset in CAMERA_PRESETS.items():
-        if name.lower() == camera_name.lower():
+        if name.lower() == normalized_camera.lower():
             return name, preset
     raise HTTPException(status_code=404, detail="That camera is not currently in the uploaded preset list.")
 
@@ -109,10 +182,12 @@ def resolve_camera_mode(camera_name: str, mode_name: Optional[str] = None) -> Tu
     if not resolved_mode_name:
         raise HTTPException(status_code=500, detail=f"Preset for {canonical_name} has no default_mode defined.")
 
+    normalized_mode_name = normalize_mode_name(canonical_name, resolved_mode_name)
+
     matched_mode_name = None
     mode = None
     for candidate_name, candidate in modes.items():
-        if candidate_name.lower() == resolved_mode_name.lower():
+        if candidate_name.lower() == normalized_mode_name.lower():
             matched_mode_name = candidate_name
             mode = candidate
             break
@@ -120,7 +195,10 @@ def resolve_camera_mode(camera_name: str, mode_name: Optional[str] = None) -> Tu
     if mode is None:
         raise HTTPException(
             status_code=404,
-            detail=f"Mode '{resolved_mode_name}' is not defined for camera '{canonical_name}'."
+            detail={
+                "error": f"Mode '{resolved_mode_name}' is not defined for camera '{canonical_name}'.",
+                "supported_modes": list(modes.keys())
+            }
         )
 
     if "sensor_width_mm" not in mode or "sensor_height_mm" not in mode:
@@ -130,6 +208,8 @@ def resolve_camera_mode(camera_name: str, mode_name: Optional[str] = None) -> Tu
         )
 
     assumptions.append(f"Used preset camera '{canonical_name}' in mode '{matched_mode_name}'.")
+    if resolved_mode_name != matched_mode_name:
+        assumptions.append(f"Normalized requested mode '{resolved_mode_name}' to '{matched_mode_name}'.")
     if matched_mode_name == preset.get("default_mode"):
         assumptions.append("Used default mode for this camera preset.")
 
