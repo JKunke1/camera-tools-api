@@ -1,166 +1,1114 @@
 {
   "Sony Venice": {
-    "sensor_width_mm": 36.2,
-    "sensor_height_mm": 24.1
+    "default_mode": "FF 6K",
+    "modes": {
+      "FF 6K": {
+        "sensor_width_mm": 36.2,
+        "sensor_height_mm": 24.1,
+        "mode_status": "base_sensor_verified_camera_sensor_size_mode_name_verified",
+        "fov_behavior": "full_sensor"
+      },
+      "S35 4K": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "FF 2K": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "full_sensor_or_downsample_needs_verification"
+      },
+      "S35 2K": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Sony Venice 2 8.6K": {
-    "sensor_width_mm": 40.2,
-    "sensor_height_mm": 21.1
+    "default_mode": "FF 8.6K 17:9",
+    "modes": {
+      "FF 8.6K 17:9": {
+        "sensor_width_mm": 40.2,
+        "sensor_height_mm": 21.1,
+        "mode_status": "base_sensor_from_existing_master_preset_mode_name_verified",
+        "fov_behavior": "full_sensor"
+      },
+      "FF 8.6K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor_or_oversample_needs_verification"
+      },
+      "FFc 6K 17:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "FFc 6K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35 5.8K 17:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35 5.8K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35 4.3K 4:3": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35c 4K 17:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "FFc 3.8K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Sony BURANO": {
-    "sensor_width_mm": 35.9,
-    "sensor_height_mm": 24.0
+    "default_mode": "FF 8.6K 17:9",
+    "modes": {
+      "FF 8.6K 17:9": {
+        "sensor_width_mm": 35.9,
+        "sensor_height_mm": 24.0,
+        "mode_status": "base_sensor_from_existing_master_preset_mode_name_verified",
+        "fov_behavior": "full_sensor_or_near_full_sensor_needs_verification"
+      },
+      "FF 8.6K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor_or_oversample_needs_verification"
+      },
+      "FFc 6K 17:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "FFc 6K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "FFc 3.8K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35 5.8K 17:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35 5.8K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35 4.3K 4:3": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35c 4K 17:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S35 1.9K 16:9": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Sony FX9": {
-    "sensor_width_mm": 35.7,
-    "sensor_height_mm": 18.8
+    "default_mode": "FF 6K",
+    "modes": {
+      "FF 6K": {
+        "sensor_width_mm": 35.7,
+        "sensor_height_mm": 18.8,
+        "mode_status": "base_sensor_from_existing_master_preset_mode_name_verified",
+        "fov_behavior": "full_sensor"
+      },
+      "S35 4K": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      },
+      "FF 2K": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "full_sensor_or_downsample_needs_verification"
+      },
+      "S35 2K": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Sony FX6": {
-    "sensor_width_mm": 35.6,
-    "sensor_height_mm": 23.8
+    "default_mode": "FF",
+    "modes": {
+      "FF": {
+        "sensor_width_mm": 35.6,
+        "sensor_height_mm": 23.8,
+        "mode_status": "base_sensor_from_existing_master_preset_mode_name_verified",
+        "fov_behavior": "full_sensor"
+      },
+      "S35": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Sony FX3": {
-    "sensor_width_mm": 35.6,
-    "sensor_height_mm": 23.8
+    "default_mode": "Full Frame",
+    "modes": {
+      "Full Frame": {
+        "sensor_width_mm": 35.6,
+        "sensor_height_mm": 23.8,
+        "mode_status": "base_sensor_from_existing_master_preset",
+        "fov_behavior": "full_sensor"
+      }
+    }
   },
   "Alexa 35": {
-    "sensor_width_mm": 27.99,
-    "sensor_height_mm": 19.22
+    "default_mode": "4.6K 3:2 Open Gate",
+    "modes": {
+      "4.6K 3:2 Open Gate": {
+        "sensor_width_mm": 28.0,
+        "sensor_height_mm": 19.2,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "4.6K 16:9": {
+        "sensor_width_mm": 28.0,
+        "sensor_height_mm": 15.7,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "4K 16:9": {
+        "sensor_width_mm": 24.9,
+        "sensor_height_mm": 14.0,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "3.3K 6:5": {
+        "sensor_width_mm": 20.2,
+        "sensor_height_mm": 16.9,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "3K 1:1": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Alexa Mini": {
-    "sensor_width_mm": 28.25,
-    "sensor_height_mm": 18.17
+    "default_mode": "Open Gate 3.4K",
+    "modes": {
+      "Open Gate 3.4K": {
+        "sensor_width_mm": 28.25,
+        "sensor_height_mm": 18.17,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "3.2K 16:9": {
+        "sensor_width_mm": 26.4,
+        "sensor_height_mm": 14.85,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "2.8K 4:3": {
+        "sensor_width_mm": 23.76,
+        "sensor_height_mm": 17.82,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "2.8K 16:9 HD": {
+        "sensor_width_mm": 23.76,
+        "sensor_height_mm": 13.37,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "S16 HD": {
+        "sensor_width_mm": 13.2,
+        "sensor_height_mm": 7.43,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Alexa LF": {
-    "sensor_width_mm": 36.7,
-    "sensor_height_mm": 25.54
+    "default_mode": "4.5K LF 3:2 Open Gate",
+    "modes": {
+      "4.5K LF 3:2 Open Gate": {
+        "sensor_width_mm": 36.7,
+        "sensor_height_mm": 25.54,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "4.3K LF 16:9": {
+        "sensor_width_mm": 35.64,
+        "sensor_height_mm": 20.05,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "4.5K LF 2.39:1": {
+        "sensor_width_mm": 36.7,
+        "sensor_height_mm": 15.31,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "3.8K LF 16:9": {
+        "sensor_width_mm": 31.68,
+        "sensor_height_mm": 17.82,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "2.8K LF 1:1": {
+        "sensor_width_mm": 23.76,
+        "sensor_height_mm": 23.76,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "3.4K S35 3:2": {
+        "sensor_width_mm": 28.25,
+        "sensor_height_mm": 18.17,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "3.2K S35 16:9": {
+        "sensor_width_mm": 26.4,
+        "sensor_height_mm": 14.85,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "2.8K S35 4:3": {
+        "sensor_width_mm": 23.76,
+        "sensor_height_mm": 17.82,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "2.8K S35 16:9 HD": {
+        "sensor_width_mm": 23.76,
+        "sensor_height_mm": 13.37,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Alexa Mini LF": {
-    "sensor_width_mm": 36.7,
-    "sensor_height_mm": 25.54
+    "default_mode": "4.5K LF 3:2 Open Gate",
+    "modes": {
+      "4.5K LF 3:2 Open Gate": {
+        "sensor_width_mm": 36.7,
+        "sensor_height_mm": 25.54,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "4.3K LF 16:9": {
+        "sensor_width_mm": 35.64,
+        "sensor_height_mm": 20.05,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "4.5K LF 2.39:1": {
+        "sensor_width_mm": 36.7,
+        "sensor_height_mm": 15.31,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "3.8K LF 16:9": {
+        "sensor_width_mm": 31.68,
+        "sensor_height_mm": 17.82,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "2.8K LF 1:1": {
+        "sensor_width_mm": 23.76,
+        "sensor_height_mm": 23.76,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "3.4K S35 3:2": {
+        "sensor_width_mm": 28.25,
+        "sensor_height_mm": 18.17,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "3.2K S35 16:9": {
+        "sensor_width_mm": 26.4,
+        "sensor_height_mm": 14.85,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "2.8K S35 4:3": {
+        "sensor_width_mm": 23.76,
+        "sensor_height_mm": 17.82,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "2.8K S35 16:9 HD": {
+        "sensor_width_mm": 23.76,
+        "sensor_height_mm": 13.37,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Alexa 65": {
-    "sensor_width_mm": 54.12,
-    "sensor_height_mm": 25.59
+    "default_mode": "Open Gate 6.5K",
+    "modes": {
+      "Open Gate 6.5K": {
+        "sensor_width_mm": 54.12,
+        "sensor_height_mm": 25.59,
+        "mode_status": "base_sensor_from_existing_master_preset_mode_name_partially_verified",
+        "fov_behavior": "full_sensor"
+      },
+      "mode_data_pending": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "official_mode_research_pending",
+        "fov_behavior": "pending"
+      }
+    }
   },
   "RED Monstro 8K VV": {
-    "sensor_width_mm": 40.96,
-    "sensor_height_mm": 21.6
+    "default_mode": "8K FF",
+    "modes": {
+      "8K FF": {
+        "sensor_width_mm": 41.0,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "8K 2:1": {
+        "sensor_width_mm": 41.0,
+        "sensor_height_mm": 20.5,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 2.4:1 (WS)": {
+        "sensor_width_mm": 41.0,
+        "sensor_height_mm": 17.3,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 16:9 (HD)": {
+        "sensor_width_mm": 38.4,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 14:9": {
+        "sensor_width_mm": 33.6,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 3:2": {
+        "sensor_width_mm": 32.4,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 6:5": {
+        "sensor_width_mm": 25.9,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 8:9": {
+        "sensor_width_mm": 19.2,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "RED V-Raptor 8K VV": {
-    "sensor_width_mm": 40.96,
-    "sensor_height_mm": 21.6
+    "default_mode": "8K 17:9",
+    "modes": {
+      "8K 17:9": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "8K 2:1": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 20.48,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 2.4:1": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 17.28,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 16:9": {
+        "sensor_width_mm": 38.4,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 1:1": {
+        "sensor_width_mm": 21.6,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K S35": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "dual_format_mode_verified_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "RED V-Raptor [X] 8K VV": {
-    "sensor_width_mm": 40.96,
-    "sensor_height_mm": 21.6
+    "default_mode": "8K 17:9",
+    "modes": {
+      "8K 17:9": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "8K 2:1": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 20.48,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 2.4:1": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 17.28,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 16:9": {
+        "sensor_width_mm": 38.4,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 1:1": {
+        "sensor_width_mm": 21.6,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K S35": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "dual_format_mode_verified_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "RED V-Raptor XL [X] 8K VV": {
-    "sensor_width_mm": 40.96,
-    "sensor_height_mm": 21.6
+    "default_mode": "8K 17:9",
+    "modes": {
+      "8K 17:9": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "8K 2:1": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 20.48,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 2.4:1": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 17.28,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 16:9": {
+        "sensor_width_mm": 38.4,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "8K 1:1": {
+        "sensor_width_mm": 21.6,
+        "sensor_height_mm": 21.6,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K S35": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "dual_format_mode_verified_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "RED Komodo 6K S35": {
-    "sensor_width_mm": 27.03,
-    "sensor_height_mm": 14.26
+    "default_mode": "6K 17:9",
+    "modes": {
+      "6K 17:9": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 14.26,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "6K 2:1": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 13.52,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K 2.4:1": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 11.32,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K 16:9": {
+        "sensor_width_mm": 25.34,
+        "sensor_height_mm": 14.26,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K 4:3 2x": {
+        "sensor_width_mm": 18.61,
+        "sensor_height_mm": 14.26,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K 6:5 2x": {
+        "sensor_width_mm": 17.11,
+        "sensor_height_mm": 14.26,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "RED Komodo-X 6K S35": {
-    "sensor_width_mm": 27.03,
-    "sensor_height_mm": 14.26
-  },
-  "Panavision DXL2": {
-    "sensor_width_mm": 40.96,
-    "sensor_height_mm": 21.6
+    "default_mode": "6K 17:9",
+    "modes": {
+      "6K 17:9": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 14.26,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "full_sensor"
+      },
+      "6K 2:1": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 13.52,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K 2.4:1": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 11.4,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K 16:9": {
+        "sensor_width_mm": 25.34,
+        "sensor_height_mm": 14.26,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K 1:1": {
+        "sensor_width_mm": 14.26,
+        "sensor_height_mm": 14.26,
+        "mode_status": "verified_active_area",
+        "fov_behavior": "cropped_sensor"
+      },
+      "6K 4:3 2x": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "mode_status": "verified_mode_name_active_area_pending",
+        "fov_behavior": "cropped_sensor"
+      }
+    }
   },
   "Blackmagic URSA 12K": {
-    "sensor_width_mm": 27.03,
-    "sensor_height_mm": 14.26
+    "default_mode": "12K Full Sensor",
+    "modes": {
+      "12K Full Sensor": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 14.26,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "12,288 x 6480 Super 35 sensor."
+      },
+      "8K Oversampled": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 14.26,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Blackmagic states 8K and 4K can be oversampled from 12K full sensor."
+      },
+      "4K Oversampled": {
+        "sensor_width_mm": 27.03,
+        "sensor_height_mm": 14.26,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Oversampled full-sensor mode per Blackmagic marketing/spec language."
+      }
+    }
   },
   "Blackmagic 6K FF": {
-    "sensor_width_mm": 36.0,
-    "sensor_height_mm": 24.0
+    "default_mode": "6K Open Gate",
+    "modes": {
+      "6K Open Gate": {
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Effective sensor size 36 x 24 mm full frame, native 6048 x 4032."
+      },
+      "Full Frame 6K": {
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      }
+    }
   },
   "Blackmagic 4K": {
-    "sensor_width_mm": 18.96,
-    "sensor_height_mm": 10.0
+    "default_mode": "4K Sensor",
+    "modes": {
+      "4K Sensor": {
+        "sensor_width_mm": 18.96,
+        "sensor_height_mm": 10.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Master preset value retained; Blackmagic officially describes this as a 4/3 sensor."
+      },
+      "Micro Four Thirds": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Official docs confirm 4/3 size sensor but parsed spec text did not expose exact active-area mm."
+      }
+    }
   },
   "Blackmagic URSA Cine 12K LF": {
-    "sensor_width_mm": 36.0,
-    "sensor_height_mm": 24.0
+    "default_mode": "12K 3:2 Open Gate",
+    "modes": {
+      "12K 3:2 Open Gate": {
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Blackmagic describes URSA Cine 12K LF as a 36 x 24 mm RGBW sensor."
+      },
+      "12K 2.4:1": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      },
+      "9K Super 35": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      },
+      "8K Full Sensor": {
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Blackmagic says 4K, 8K, or 12K can use the entire sensor without cropping."
+      },
+      "4K Full Sensor": {
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Blackmagic says 4K, 8K, or 12K can use the entire sensor without cropping."
+      },
+      "6:5 Anamorphic": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      }
+    }
   },
   "Blackmagic URSA Cine 17K 65": {
-    "sensor_width_mm": 50.81,
-    "sensor_height_mm": 23.32
+    "default_mode": "17K Open Gate",
+    "modes": {
+      "17K Open Gate": {
+        "sensor_width_mm": 50.81,
+        "sensor_height_mm": 23.32,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Effective sensor size 50.81 x 23.32 mm."
+      },
+      "Center Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Blackmagic states the camera can center crop for cinema and television deliverables."
+      }
+    }
   },
   "Canon C300 Mk III": {
-    "sensor_width_mm": 26.2,
-    "sensor_height_mm": 13.8
+    "default_mode": "Super 35",
+    "modes": {
+      "Super 35": {
+        "sensor_width_mm": 26.2,
+        "sensor_height_mm": 13.8,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Master preset value retained; Canon officially describes the camera as Super 35 with Super 16 crop support."
+      },
+      "Super 16 Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      }
+    }
   },
   "Canon C500 Mk II": {
-    "sensor_width_mm": 38.1,
-    "sensor_height_mm": 20.1
+    "default_mode": "Full Frame",
+    "modes": {
+      "Full Frame": {
+        "sensor_width_mm": 38.1,
+        "sensor_height_mm": 20.1,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Canon states a 5.9K full-frame sensor of 38.1 x 20.1 mm."
+      },
+      "Super 35 Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      },
+      "Super 16 Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      },
+      "4:3 Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Canon confirms 4:3 RAW Light crop support."
+      },
+      "6:5 Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Canon confirms 6:5 RAW Light crop support."
+      }
+    }
   },
   "Canon C70": {
-    "sensor_width_mm": 26.2,
-    "sensor_height_mm": 13.8
+    "default_mode": "Super 35",
+    "modes": {
+      "Super 35": {
+        "sensor_width_mm": 26.2,
+        "sensor_height_mm": 13.8,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Master preset value retained; Canon officially describes the camera as a Super 35 DGO sensor."
+      },
+      "Super 16 Digital IS": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending",
+        "notes": "Canon says Super 16 Digital IS uses the peripheral area around the center of the 4K sensor."
+      }
+    }
   },
   "Canon C400": {
-    "sensor_width_mm": 36.0,
-    "sensor_height_mm": 19.0
+    "default_mode": "Full Frame 3:2",
+    "modes": {
+      "Full Frame 3:2": {
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 19.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Master preset value retained; Canon confirms Full Frame 3:2, Super 35, and Super 16 sensor modes."
+      },
+      "Super 35 Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      },
+      "Super 16 Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      }
+    }
   },
   "Canon C80": {
-    "sensor_width_mm": 36.0,
-    "sensor_height_mm": 19.0
+    "default_mode": "Full Frame",
+    "modes": {
+      "Full Frame": {
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 19.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Master preset value retained; Canon confirms Full Frame and Super 35 crop modes."
+      },
+      "Super 35 Crop": {
+        "sensor_width_mm": null,
+        "sensor_height_mm": null,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_mode_name_active_area_pending"
+      }
+    }
+  },
+  "Panavision DXL2": {
+    "default_mode": "8K VV",
+    "modes": {
+      "8K VV": {
+        "sensor_width_mm": 40.96,
+        "sensor_height_mm": 21.6,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Panavision lists 40.96 x 21.6 mm sensor size using the RED MONSTRO sensor."
+      }
+    }
   },
   "Big Sky": {
-    "sensor_width_mm": 77.5,
-    "sensor_height_mm": 75.6
+    "default_mode": "18K Full Sensor",
+    "modes": {
+      "18K Full Sensor": {
+        "sensor_width_mm": 77.5,
+        "sensor_height_mm": 75.6,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "ASC and Sphere sources describe the Big Sky sensor as 77.5 mm x 75.6 mm."
+      }
+    }
   },
   "IMAX 15/70": {
-    "sensor_width_mm": 70.41,
-    "sensor_height_mm": 48.5
+    "default_mode": "15-Perf 65mm",
+    "modes": {
+      "15-Perf 65mm": {
+        "sensor_width_mm": 70.41,
+        "sensor_height_mm": 56.62,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic lists IMAX 15/70 capture area as 70.41 x 56.62 mm. This differs from the earlier master preset height."
+      }
+    }
   },
   "IMAX Digital": {
-    "sensor_width_mm": 54.12,
-    "sensor_height_mm": 25.59
+    "default_mode": "Large Format Digital",
+    "modes": {
+      "Large Format Digital": {
+        "sensor_width_mm": 54.12,
+        "sensor_height_mm": 25.59,
+        "fov_behavior": "full_sensor",
+        "mode_status": "master_value_retained_needs_verification",
+        "notes": "Master preset value retained for current compatibility. This label is not a single official camera format standard and should be reviewed against your intended digital IMAX reference camera."
+      }
+    }
   },
   "IMAX 65mm": {
-    "sensor_width_mm": 52.63,
-    "sensor_height_mm": 23.01
+    "default_mode": "5-Perf 65mm",
+    "modes": {
+      "5-Perf 65mm": {
+        "sensor_width_mm": 52.15,
+        "sensor_height_mm": 23.07,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic lists 65mm 5-perf capture area as 52.15 x 23.07 mm."
+      }
+    }
   },
   "Super 8": {
-    "sensor_width_mm": 5.79,
-    "sensor_height_mm": 4.01
+    "default_mode": "Regular Gate",
+    "modes": {
+      "Regular Gate": {
+        "sensor_width_mm": 5.79,
+        "sensor_height_mm": 4.01,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic."
+      },
+      "Extended Gate": {
+        "sensor_width_mm": 6.3,
+        "sensor_height_mm": 4.2,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic."
+      }
+    }
   },
   "16mm": {
-    "sensor_width_mm": 10.26,
-    "sensor_height_mm": 7.49
+    "default_mode": "Regular 16mm",
+    "modes": {
+      "Regular 16mm": {
+        "sensor_width_mm": 10.26,
+        "sensor_height_mm": 7.49,
+        "fov_behavior": "full_sensor",
+        "mode_status": "master_value_retained_needs_verification",
+        "notes": "Current master preset value retained. Kodak reference confirms 16mm as a 1.33 format but parsed source did not expose exact active-area mm cleanly."
+      }
+    }
   },
   "Super 16": {
-    "sensor_width_mm": 12.52,
-    "sensor_height_mm": 7.41
+    "default_mode": "Super 16",
+    "modes": {
+      "Super 16": {
+        "sensor_width_mm": 12.42,
+        "sensor_height_mm": 7.44,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic."
+      }
+    }
   },
   "35mm Academy": {
-    "sensor_width_mm": 21.95,
-    "sensor_height_mm": 16.0
+    "default_mode": "4-Perf Academy",
+    "modes": {
+      "4-Perf Academy": {
+        "sensor_width_mm": 21.95,
+        "sensor_height_mm": 16.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "master_value_retained_needs_verification",
+        "notes": "Master preset value retained for Academy aperture style reference. Kodak infographic exposes 4-perf full 35mm at 24.90 x 18.70 mm, which is not the same as Academy aperture."
+      },
+      "4-Perf Full": {
+        "sensor_width_mm": 24.9,
+        "sensor_height_mm": 18.7,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic."
+      }
+    }
   },
   "Super 35": {
-    "sensor_width_mm": 24.89,
-    "sensor_height_mm": 18.66
+    "default_mode": "4-Perf Full Aperture",
+    "modes": {
+      "4-Perf Full Aperture": {
+        "sensor_width_mm": 24.89,
+        "sensor_height_mm": 18.66,
+        "fov_behavior": "full_sensor",
+        "mode_status": "master_value_retained_needs_verification",
+        "notes": "Master preset value retained. Very close to Kodak's 4-perf full 35mm 24.90 x 18.70 mm."
+      },
+      "3-Perf": {
+        "sensor_width_mm": 24.9,
+        "sensor_height_mm": 13.9,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic."
+      },
+      "2-Perf": {
+        "sensor_width_mm": 24.9,
+        "sensor_height_mm": 9.35,
+        "fov_behavior": "cropped_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic."
+      }
+    }
   },
   "VistaVision": {
-    "sensor_width_mm": 37.72,
-    "sensor_height_mm": 24.92
+    "default_mode": "8-Perf Horizontal",
+    "modes": {
+      "8-Perf Horizontal": {
+        "sensor_width_mm": 37.72,
+        "sensor_height_mm": 24.92,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic."
+      }
+    }
   },
   "65mm": {
-    "sensor_width_mm": 52.63,
-    "sensor_height_mm": 23.01
+    "default_mode": "5-Perf 65mm",
+    "modes": {
+      "5-Perf 65mm": {
+        "sensor_width_mm": 52.15,
+        "sensor_height_mm": 23.07,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Kodak 2024 film-format infographic. This differs slightly from the earlier master preset values."
+      }
+    }
   },
   "70mm": {
-    "sensor_width_mm": 70.41,
-    "sensor_height_mm": 48.5
+    "default_mode": "70mm Reference",
+    "modes": {
+      "70mm Reference": {
+        "sensor_width_mm": 70.41,
+        "sensor_height_mm": 56.62,
+        "fov_behavior": "full_sensor",
+        "mode_status": "master_value_reinterpreted_needs_review",
+        "notes": "Retained as a broad-format reference using Kodak's IMAX 15/70 dimensions because the label '70mm' is ambiguous between release-print and capture conventions. Review before public release."
+      }
+    }
   },
   "Full Frame": {
-    "sensor_width_mm": 36.0,
-    "sensor_height_mm": 24.0
+    "default_mode": "Still/FF 36x24",
+    "modes": {
+      "Still/FF 36x24": {
+        "sensor_width_mm": 36.0,
+        "sensor_height_mm": 24.0,
+        "fov_behavior": "full_sensor",
+        "mode_status": "verified_active_area",
+        "notes": "Standard 36 x 24 mm full-frame reference."
+      }
+    }
   }
 }
