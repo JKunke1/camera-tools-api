@@ -22,6 +22,31 @@ CAMERA_ALIASES = {
 
     "sony burano": "Sony BURANO",
     "burano": "Sony BURANO",
+
+    "alexa 35": "Alexa 35",
+    "alexa mini": "Alexa Mini",
+    "alexa lf": "Alexa LF",
+    "alexa mini lf": "Alexa Mini LF",
+    "alexa 65": "Alexa 65",
+
+    "red monstro 8k vv": "RED Monstro 8K VV",
+    "red v raptor 8k vv": "RED V-Raptor 8K VV",
+    "red v-raptor 8k vv": "RED V-Raptor 8K VV",
+    "red v raptor x 8k vv": "RED V-Raptor [X] 8K VV",
+    "red v-raptor [x] 8k vv": "RED V-Raptor [X] 8K VV",
+    "red v raptor xl x 8k vv": "RED V-Raptor XL [X] 8K VV",
+    "red v-raptor xl [x] 8k vv": "RED V-Raptor XL [X] 8K VV",
+
+    "red komodo": "RED Komodo 6K S35",
+    "red komodo 6k s35": "RED Komodo 6K S35",
+    "komodo": "RED Komodo 6K S35",
+
+    "red komodo x": "RED Komodo-X 6K S35",
+    "red komodo-x": "RED Komodo-X 6K S35",
+    "red komodo x 6k s35": "RED Komodo-X 6K S35",
+    "red komodo-x 6k s35": "RED Komodo-X 6K S35",
+    "komodo x": "RED Komodo-X 6K S35",
+    "komodo-x": "RED Komodo-X 6K S35",
 }
 
 MODE_ALIASES_BY_CAMERA = {
@@ -149,11 +174,16 @@ def normalize_mode_name(camera_name: str, mode_name: str) -> str:
 
 def find_camera_preset(camera_name: str) -> Tuple[str, dict]:
     normalized_camera = normalize_camera_name(camera_name)
+    normalized_camera_key = normalize_text(normalized_camera)
 
     for name, preset in CAMERA_PRESETS.items():
-        if name.lower() == normalized_camera.lower():
+        if normalize_text(name) == normalized_camera_key:
             return name, preset
-    raise HTTPException(status_code=404, detail="That camera is not currently in the uploaded preset list.")
+
+    raise HTTPException(
+        status_code=404,
+        detail="That camera is not currently available in the live preset data."
+    )
 
 
 def resolve_camera_mode(camera_name: str, mode_name: Optional[str] = None) -> Tuple[str, Optional[str], float, float, list, dict]:
